@@ -51,7 +51,7 @@ var responsiveSlider = function() {
     
     setInterval(function() {
       nextSlide()
-    }, 10000);
+    }, 5000);
     };
     
     window.onload = function() {
