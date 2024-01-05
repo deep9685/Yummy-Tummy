@@ -15,6 +15,7 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    perspective: 15px;
 }
 
 .container{
@@ -83,48 +84,50 @@
 }
 
 
-/* section2 start */
-.slider-container{
-    display: flex;
-    justify-content: center;
+/* Section2 start*/
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  perspective: 15px;
+  transform-style: preserve-3d;
 }
 
 #slider {
-    position: relative;
-    /* background-color: #c14343; */
-    width: 100vw;
-    height: 80vh;
+  position: relative;
+  width: 90vw;
+  height: 70vh;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  }
+}
 
-  #slider ul {
-    position: relative;
-    list-style: none;
-    height: 100%;
-    width: 10000%;
-    padding: 0;
-    margin: 0;
-    transition: all 750ms ease;
-    left: 0;
-  }
+.slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  transform: translateZ(-270px) scale(1);
+  transition: opacity 0.5s ease-in-out;
+}
 
-  #slider ul li {
-    position: relative;
-    height: 100%;
-  
-    float: left;
-  }
+#prev, #next {
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; */
 
-  #slider ul li img{
-    /* width: 100%; */
-    width: 100vw;
-    height: 80vh;
-  }
-
-  #slider #prev, #slider #next {
-    width: 50px;
+  width: 50px;
     line-height: 50px;
     text-align: center;
     color: white;
@@ -136,16 +139,19 @@
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     transform: translateY(-50%);
     transition: all 150ms ease;
-  }
+}
 
-  #slider #prev {
-    left: 10px;
-  }
-  #slider #next {
-    right: 10px;
-  }
-  
-  #slider #prev:hover, #slider #next:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+#prev:hover, #next:hover {
+  /* background-color: #555; */
+  background-color: rgba(0, 0, 0, 0.5);
     text-shadow: 0;
-  }
+    cursor: pointer;
+}
