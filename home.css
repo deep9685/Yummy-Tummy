@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Kalam:wght@300&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
 
 *{
     margin: 0;
@@ -20,7 +21,10 @@
 
 .container{
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
 }
 
 .nav-bar{
@@ -99,7 +103,7 @@
   width: 90vw;
   height: 70vh;
   overflow: hidden;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); */
   
 }
 
@@ -154,4 +158,208 @@
   background-color: rgba(0, 0, 0, 0.5);
     text-shadow: 0;
     cursor: pointer;
+}
+
+.welcome{
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  width: 38vw;
+  height: 12vh;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+}
+
+.welcome p{
+  font-style: italic;
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Intro section start */
+
+.Intro-section{
+  width: 100%;
+  height: 40vh;
+  margin-top: 30px;
+  background-color: #FED500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Intro-section p{
+  width: 80vw;
+  /* font-family: 'Alegreya', serif; */
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 28px;
+  text-align: center;
+}
+
+#learn-more{
+  position: relative;
+    border: 1px solid transparent;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 150px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    /* padding: 8px 0 9px; */
+    border-radius: 20px;
+    /* top: -10px; */
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+
+/* Founder section start */
+
+.founder-section{
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  height: 80vh;
+  overflow: hidden;
+  margin: 0 auto;
+  /* margin-top: 20px; */
+  /* align-items: center; */
+}
+
+.img-section{
+  width: 40%;
+  height: auto;
+  /* margin-top: 400px; */
+}
+
+.img-section img{
+  width: 100%;
+  /* height: auto; */
+  /* margin-top: 250px; */
+  /* transform: scale(1); */
+}
+
+.text-section{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 1rem;
+}
+
+.name-heading{
+  color: rgb(200, 35, 35);
+  font-size: 45px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub-heading{
+  /* color: rgb(200, 35, 35); */
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.line{
+  width: 200px;
+  height: 5px;
+  background-color: #FED500;
+  margin-top: 7px;
+}
+
+.text-section p{
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cofounder section */
+.Co-founder-section{
+  width: 100%;
+  background-color: #ffe250; 
+}
+
+.line-2{
+  background-color: rgb(200, 35, 35);
+  width: 200px;
+  height: 5px;
+  margin-top: 7px;
+}
+
+
+/* Footer section start */
+
+.footer-section{
+  width: 100%;
+  background-color: rgb(200, 35, 35);
+  height: 40vh;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.footer-heading{
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #FED500;
+  text-shadow: 1px 2px 3px black;
+  margin-bottom: 20px;
+}
+
+.icon{
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+  transition: all  0.4s;
+}
+
+.icon-1{
+  color: #FED500;
+  font-size: 20px;
+}
+
+.span{
+  color: #fff;
+  font-size: 20px;
+}
+
+.get-in-touch-point{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quick-link-p{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quick-link p{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icon-div{
+  display: flex;
+  gap: 1rem;
+}
+
+.icon:hover{
+  color: #FED500;
 }
